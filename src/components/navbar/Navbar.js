@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/Navbar.css";
 import { FaHome, FaLaptop } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
+import { BiEnvelope } from "react-icons/bi";
 import { Link } from "react-scroll";
 import ProfileImg from "../../images/me.jpg";
 import NavLinks from "./NavLinks";
@@ -97,6 +98,19 @@ const Navbar = ({ nav, handleNav }) => {
 							<FaLaptop className='mid-icon' />
 							<li className='mid-link' onClick={handleNav}>
 								Skills
+							</li>
+						</Link>
+						<Link
+							activeClass='active'
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={500}
+							to='contact'
+							className='mid-links'>
+							<BiEnvelope className='mid-icon' />
+							<li className='mid-link' onClick={handleNav}>
+								Contact
 							</li>
 						</Link>
 					</ul>
