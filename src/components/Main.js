@@ -4,6 +4,7 @@ import Skills from './Skills';
 import HeroHeader from './HeroHeader';
 import Contact from './Contact';
 
+
 const Main = ({nav, handleNav}) => {
   return(
     <div className='main'>

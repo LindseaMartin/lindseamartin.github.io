@@ -2,8 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Contact.css";
 import { motion } from "framer-motion";
+import { useForm } from '@formspree/react';
 
-const Contact = () => {
+function Contact() {
+    const [state, handleSubmit] = useForm("mzbqpkrz");
+  if (state.succeeded) {
+      return <div className="contact" id='contact'><div className="container"><p className="heading-text">Thanks for the message!</p></div></div>;
+  }
     const fade = {
         opacity: 1,
         transition:{
@@ -36,15 +41,14 @@ const Contact = () => {
                         <div className="contact-hello">
                             <p>Say Hello</p>
                             <Link className='hello-links' to="//linkedin.com/in/lindsea-martin" target='_blank'>LinkedIn</Link>
-                            <Link className='hello-links' to="//mailto:lindseamartin@gmail.com" target='_blank'>lindseamartin@gmail.com</Link>
+                            <Link className='hello-links' to="mailto:lindseamartin@gmail.com" target='_blank'>lindseamartin@gmail.com</Link>
                         </div>
                     </motion.div>
                     <motion.div className="right-box" initial={{opacity: 0, y: '50px'}} whileInView={verticalLeft}>
                     
-                        <form
-                            name="contact-form"
+                        <form onSubmit={handleSubmit}
+                            name="contact"
                             method="POST"
-                            data-netlify="true"
                             action="POST"
                         >
                             <input type="hidden" name="form-name" value="contact-form" />
@@ -86,7 +90,7 @@ const Contact = () => {
                             </div>
 
                             <div className="form-btn">
-                            <button type="submit" className="hero-contact">
+                            <button type="submit" disabled={state.submitting} className="hero-contact">
                                 Send Message
                             </button>
                             </div>
