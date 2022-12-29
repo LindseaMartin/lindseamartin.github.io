@@ -104,8 +104,8 @@ const HeroHeader = ({ nav, handleNav }) => {
 				initial='hidden'
 				whileInView='visible'>
 				<a
-					href='newResume.pdf'
-					download='newResume.pdf'
+					href='LindseaMartinResume.pdf'
+					download='LindseaMartinResume.pdf'
 					className='hero-contact'>
 					Download Resume <BiDownload className='cv-icon' />
 				</a>
