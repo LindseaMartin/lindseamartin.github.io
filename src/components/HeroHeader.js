@@ -96,7 +96,7 @@ const HeroHeader = ({ nav, handleNav }) => {
 					<span>Lindsea</span> <span>Martin</span>
 				</p>
 				<p className='hero-desc'>
-					Beginner <span className='hero-desc-sub'>Developer.</span>
+					 <span className='hero-desc-sub'>Developer</span>
 				</p>
 			</motion.div>
 			<motion.span

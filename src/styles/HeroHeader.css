@@ -116,10 +116,11 @@
 .menu-icon {
 	position: fixed;
 	top: 1rem;
-	right: 1rem;
+	left: 1rem;
 }
 
-.menu-icon:hover {
+.menu-icon:hover,
+.to-top-icon:hover {
 	background-color: var(--nav-blue-shade);
 }
 
@@ -130,11 +131,7 @@
 .to-top-icon {
 	position: fixed;
 	bottom: 1rem;
-	right: 1rem;
-}
-
-.to-top-icon:hover {
-	background-color: var(--nav-blue-shade);
+	left: 1rem;
 }
 
 .show {
