@@ -9,7 +9,7 @@
     padding: 1rem;
     width: 80%;
     margin: 0 auto;
-    /* border: 1px solid var(--nav-blue); */
+    border: 1px solid var(--nav-blue); 
     color: var(--nav-blue);
     cursor: pointer;
     border-radius: 5px;

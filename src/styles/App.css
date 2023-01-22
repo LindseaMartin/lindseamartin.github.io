@@ -47,7 +47,8 @@ html, body {
 /* General styles */
 .about,
 .skills,
-.contact
+.contact,
+.portfolio
  {
   background-color: var(--section-bgd);
   color: var(--nav-grey);

@@ -93,6 +93,19 @@ const Navbar = ({ nav, handleNav }) => {
 							smooth={true}
 							offset={0}
 							duration={500}
+							to='portfolio'
+							className='mid-links'>
+							<BiEnvelope className='mid-icon' />
+							<li className='mid-link' onClick={handleNav}>
+								Portfolio
+							</li>
+						</Link>
+						<Link
+							activeClass='active'
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={500}
 							to='skills'
 							className='mid-links'>
 							<FaLaptop className='mid-icon' />
