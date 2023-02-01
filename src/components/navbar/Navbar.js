@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Navbar.css";
-import { FaHome, FaLaptop } from "react-icons/fa";
+import { FaHome, FaLaptop, FaFolderOpen } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
 import { BiEnvelope } from "react-icons/bi";
 import { Link } from "react-scroll";
@@ -95,7 +95,7 @@ const Navbar = ({ nav, handleNav }) => {
 							duration={500}
 							to='portfolio'
 							className='mid-links'>
-							<BiEnvelope className='mid-icon' />
+							<FaFolderOpen className='mid-icon' />
 							<li className='mid-link' onClick={handleNav}>
 								Portfolio
 							</li>
