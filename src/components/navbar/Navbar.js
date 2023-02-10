@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/Navbar.css";
 import { FaHome, FaLaptop, FaFolderOpen } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";

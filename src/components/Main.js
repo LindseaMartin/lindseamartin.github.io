@@ -1,4 +1,3 @@
-import React from 'react';
 import HeroHeader from './HeroHeader';
 import About from './About';
 import Portfolio from './Portfolio';

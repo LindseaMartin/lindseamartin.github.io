@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Contact.css";
 import { motion } from "framer-motion";
@@ -36,7 +35,7 @@ function Contact() {
                 <div className="contact-box">
                     <motion.div className="left-box" initial={{opacity: 0, y: '-50px'}} whileInView={verticalLeft}>
                         <div className="contact-heading">
-                            <p>I’m interested in full time work or freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form</p>
+                            <p>I’m interested in full time work or freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.</p>
                         </div>
                         <div className="contact-hello">
                             <p>Say Hello</p>
