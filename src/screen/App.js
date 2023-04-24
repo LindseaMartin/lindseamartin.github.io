@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react"
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import '../styles/App.css';
 import { motion } from "framer-motion";
 import HomePage from "../pages/HomePage";
+import GamePage from "../pages/GamePage";
 
 function App() {
   // States
@@ -36,10 +37,13 @@ function App() {
     </div>
     :
     <div className="App">
-      <Router>
-        <HomePage />
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />}  />
+        <Route path="/GamePage" element={<GamePage />} />
+      </Routes>
+    </Router>
+  </div>
   );
 }
 
