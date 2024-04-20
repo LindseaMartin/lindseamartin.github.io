@@ -1,13 +1,16 @@
-import React from "react";
 import "../../styles/Navbar.css";
-import { FaHome, FaLaptop } from "react-icons/fa";
+import { FaHome, FaLaptop, FaFolderOpen } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
 import { BiEnvelope } from "react-icons/bi";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import ProfileImg from "../../images/me.jpg";
 import NavLinks from "./NavLinks";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import { Link } from 'react-router-dom';
+
+
+
 
 const navVariants = {
 	hidden: {
@@ -30,6 +33,7 @@ const navVariants = {
 
 const Navbar = ({ nav, handleNav }) => {
 	return (
+		
 		<AnimatePresence>
 			<motion.nav
 				initial={{ width: "0" }}
@@ -47,7 +51,7 @@ const Navbar = ({ nav, handleNav }) => {
 						<div className='img__cover'>
 							<img src={ProfileImg} alt='Main' className='profile-pic-small' />
 						</div>
-						<Link
+						<ScrollLink
 							activeClass='active'
 							spy={true}
 							smooth={true}
@@ -57,11 +61,11 @@ const Navbar = ({ nav, handleNav }) => {
 							to='home'
 							className='profile-name'>
 							Lindsea Martin
-						</Link>
+						</ScrollLink>
 						<NavLinks handleNav={handleNav} />
 					</div>
 					<ul className='mid-details'>
-						<Link
+						<ScrollLink
 							activeClass='active'
 							spy={true}
 							smooth={true}
@@ -73,8 +77,8 @@ const Navbar = ({ nav, handleNav }) => {
 							<li className='mid-link' onClick={handleNav}>
 								Home
 							</li>
-						</Link>
-						<Link
+						</ScrollLink>
+						<ScrollLink
 							activeClass='active'
 							spy={true}
 							smooth={true}
@@ -86,8 +90,8 @@ const Navbar = ({ nav, handleNav }) => {
 							<li className='mid-link' onClick={handleNav}>
 								About
 							</li>
-						</Link>
-						<Link
+						</ScrollLink>
+						<ScrollLink
 							activeClass='active'
 							spy={true}
 							smooth={true}
@@ -95,12 +99,12 @@ const Navbar = ({ nav, handleNav }) => {
 							duration={500}
 							to='portfolio'
 							className='mid-links'>
-							<BiEnvelope className='mid-icon' />
+							<FaFolderOpen className='mid-icon' />
 							<li className='mid-link' onClick={handleNav}>
 								Portfolio
 							</li>
-						</Link>
-						<Link
+						</ScrollLink>
+						<ScrollLink
 							activeClass='active'
 							spy={true}
 							smooth={true}
@@ -112,8 +116,8 @@ const Navbar = ({ nav, handleNav }) => {
 							<li className='mid-link' onClick={handleNav}>
 								Skills
 							</li>
-						</Link>
-						<Link
+						</ScrollLink>
+						<ScrollLink
 							activeClass='active'
 							spy={true}
 							smooth={true}
@@ -125,6 +129,9 @@ const Navbar = ({ nav, handleNav }) => {
 							<li className='mid-link' onClick={handleNav}>
 								Contact
 							</li>
+						</ScrollLink>	
+						<Link to="/GamePage" className='games-link'>
+  							<li className='games-link'>Games</li>
 						</Link>
 					</ul>
 				</motion.div>

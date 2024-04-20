@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/Portfolio.css";
 import { IoOpenOutline } from "react-icons/io5";
 import { FiFolder, FiGithub } from "react-icons/fi";

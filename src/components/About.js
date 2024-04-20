@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/About.css"
 import { motion } from "framer-motion";
 import MyImg from '../images/me.jpg';
@@ -22,7 +21,7 @@ const About = () => {
                     <motion.div initial={{x: '-100%', opacity: 0}} whileInView={horizontal} className="about-content">
                         <p>Hello! My name is Lindsea! I simply love to design and code. </p>
                         <br />
-                        <p> I’ve had the privilege of attending NAIT to enhance my skills and rate of learning. Besides that, my love of code and problem solving keeps me learning and studying in my own time!</p>
+                        <p> I have had the privilege of attending NAIT to enhance my skills and rate of learning. Besides that, my love of code and problem solving keeps me learning and studying in my own time!</p>
                         <br />
                         <p> I'm very excited to have you view my website! Thank you for your time and do not hesitate to contact me about anything technology related.</p>
                     </motion.div>
