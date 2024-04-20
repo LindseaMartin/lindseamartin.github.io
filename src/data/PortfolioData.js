@@ -3,12 +3,15 @@ export const PortfolioData = [
     title: "Workflow Tracking",
     desc: "Made for clients to send projects, employees to track their progress and send invoices. Built for a client.",
     tech: ["Sveltekit","SQL","Auth0","Node.js","Express.js"],
+    gitlink: "//github.com/LindseaMartin/WorkflowTracking",
+    site: "//github.com/LindseaMartin/WorkflowTracking",
   },
   {
     title: "Content Migration System",
     desc: "A tool for migrating content from one CMS to another. Built for a client.",
     tech: ["C#","DotNet"],
     gitlink: "//github.com/LindseaMartin/Website-Migration",
+    site: "//github.com/LindseaMartin/Website-Migration",
   },
   {
     title: "Food Helper",
