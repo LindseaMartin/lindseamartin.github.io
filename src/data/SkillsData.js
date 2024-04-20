@@ -17,22 +17,11 @@ import {
 	SiStyledcomponents,
 	SiFramer,
 	SiMicrosoftsqlserver,
-	SiCsharp
+	SiCsharp,
+	SiSvelte 
 } from "react-icons/si";
 
 export const SkillsData = [
-	{
-		name: "HTML",
-		icon: <FaHtml5 />,
-	},
-	{
-		name: "CSS",
-		icon: <FaCss3Alt />,
-	},
-	{
-		name: "Javascript",
-		icon: <DiJavascript1 />,
-	},
 	{
 		name: "React Js",
 		icon: <FaReact />,
@@ -42,12 +31,33 @@ export const SkillsData = [
 		icon: <SiNextdotjs />,
 	},
 	{
+		name: "Sveltekit",
+		icon: <SiSvelte />,
+	},
+	{
+		name: "SQL",
+		icon: <SiMicrosoftsqlserver />,
+	},
+	
+	{
+		name: "Javascript",
+		icon: <DiJavascript1 />,
+	},
+	{
 		name: "C#",
 		icon: <SiCsharp />,
 	},
 	{
 		name: "JSON",
 		icon: <VscJson />,
+	},
+	{
+		name: "HTML",
+		icon: <FaHtml5 />,
+	},
+	{
+		name: "CSS",
+		icon: <FaCss3Alt />,
 	},
 	{
 		name: "Bootstrap",
@@ -85,8 +95,5 @@ export const SkillsData = [
 		name: "Photoshop",
 		icon: <SiAdobephotoshop />,
 	},
-	{
-		name: "SQL",
-		icon: <SiMicrosoftsqlserver />,
-	}
+	
 ];

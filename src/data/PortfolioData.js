@@ -1,5 +1,16 @@
 export const PortfolioData = [
   {
+    title: "Workflow Tracking",
+    desc: "Made for clients to send projects, employees to track their progress and send invoices. Built for a client.",
+    tech: ["Sveltekit","SQL","Auth0","Node.js","Express.js"],
+  },
+  {
+    title: "Content Migration System",
+    desc: "A tool for migrating content from one CMS to another. Built for a client.",
+    tech: ["C#","DotNet"],
+    gitlink: "//github.com/LindseaMartin/Website-Migration",
+  },
+  {
     title: "Food Helper",
     desc: "A discord bot that helps you decide what to eat",
     tech: ["Discord.js"],
