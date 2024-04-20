@@ -1,5 +1,16 @@
 export const PortfolioData = [
   {
+    title: "Workflow Tracking",
+    desc: "Made for clients to send projects, employees to track their progress and send invoices. Built for a client.",
+    tech: ["Sveltekit","SQL","Auth0","Node.js","Express.js"],
+  },
+  {
+    title: "Content Migration System",
+    desc: "A tool for migrating content from one CMS to another. Built for a client.",
+    tech: ["C#","DotNet"],
+    gitlink: "//github.com/LindseaMartin/Website-Migration",
+  },
+  {
     title: "Food Helper",
     desc: "A discord bot that helps you decide what to eat",
     tech: ["Discord.js"],
@@ -26,5 +37,12 @@ export const PortfolioData = [
     tech: ["React.js", "CSS", "Github Pages", "Framer Motion", "React Router"],
     gitlink: "//github.com/LindseaMartin/Portfolio",
     site: "//lindseamartin.github.io",
+  },
+  {
+    title: "My NPX Card",
+    desc: "A small npm package that prints out my contact info. Run npm i lindseamartin npx lindseamartin in your terminal!",
+    tech: ["NPM", "Javascript"],
+    gitlink: "//github.com/LindseaMartin/businesscard",
+    site: "//www.npmjs.com/package/lindseamartin",
   },
 ];
