@@ -117,7 +117,7 @@ const Navbar = ({ nav, handleNav }) => {
 								Skills
 							</li>
 						</ScrollLink>
-						<ScrollLink
+						{/* <ScrollLink
 							activeClass='active'
 							spy={true}
 							smooth={true}
@@ -132,7 +132,7 @@ const Navbar = ({ nav, handleNav }) => {
 						</ScrollLink>	
 						<Link to="/GamePage" className='games-link'>
   							<li className='games-link'>Games</li>
-						</Link>
+						</Link> */}
 					</ul>
 				</motion.div>
 			</motion.nav>
